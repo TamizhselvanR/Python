@@ -37,5 +37,3 @@ l = BinaryTree()
 for i in lis:
     l.create(i)
 print(height(l.root))
-
-
