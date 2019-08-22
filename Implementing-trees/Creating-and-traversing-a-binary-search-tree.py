@@ -7,7 +7,6 @@ class node:
 class BinaryTree():
     def __init__(self):
         self.root = None
-
     def create(self, val):
         current = self.root
         if current:
@@ -29,22 +28,20 @@ class BinaryTree():
 def preorder(root):
     if root:
         print(str(root.info), end=" ")
-        fun(root.left)
-        fun(root.right)
+        preorder(root.left)
+        preorder(root.right)
 def postorder(root):
     if root:
-        fun(root.left)
-        fun(root.right)
+        postorder(root.left)
+        postorder(root.right)
         print(str(root.info), end=" ")
 
 
 def inorder(root):
     if root:
-        fun(root.left)
+        inorder(root.left)
         print(str(root.info), end=" ")
-        fun(root.right)
-
-
+        inorder(root.right)
 lis = [5, 3, 2, 7, 6]
 l = BinaryTree()
 for i in lis:
