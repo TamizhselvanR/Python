@@ -40,4 +40,4 @@ lis = [5, 3, 2, 7, 6]
 l = BinaryTree()
 for i in lis:
     l.create(i)
-print(lca(l.root,2,4))
+print(lca(l.root,2,6))
