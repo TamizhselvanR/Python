@@ -35,8 +35,6 @@ def postorder(root):
         postorder(root.left)
         postorder(root.right)
         print(str(root.info), end=" ")
-
-
 def inorder(root):
     if root:
         inorder(root.left)
